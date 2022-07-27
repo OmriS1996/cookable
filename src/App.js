@@ -2,6 +2,7 @@ import "./App.scss";
 import "boxicons/css/boxicons.min.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AppLayout from "./Components/layout/AppLayout";
+import Recipes from "./pages/recipes/Recipes";
 import Blank from "./pages/Blank";
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
           <Route path="/started" element={<Blank />} />
           <Route path="/calendar" element={<Blank />} />
           <Route path="/user" element={<Blank />} />
-          <Route path="/recipes" element={<Blank />} />
+          <Route path="/recipes" element={<Recipes />} />
         </Route>
       </Routes>
     </BrowserRouter>
