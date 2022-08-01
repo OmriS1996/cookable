@@ -16,20 +16,20 @@ export const category = [
   },
 ];
 
-export const measureType = [
-  {
+export const measureType = {
+  m1: {
     id: "m1",
     measureName: "units",
   },
-  {
+  m2: {
     id: "m2",
     measureName: "gram",
   },
-  {
+  m3: {
     id: "m3",
     measureName: "liter",
   },
-];
+};
 
 export const ingredient = [
   {
@@ -37,14 +37,22 @@ export const ingredient = [
     name: "egg",
     categoryId: "c3",
     measureTypeId: "m1",
+    amount: 0,
   },
   {
     id: "i2",
     name: "beef antricot",
     categoryId: "c1",
     measureTypeId: "m2",
+    amount: 100,
   },
-  { id: "i3", name: "chicken breast", categoryId: "c1", measureTypeId: "m2" },
+  {
+    id: "i3",
+    name: "chicken breast",
+    categoryId: "c1",
+    measureTypeId: "m2",
+    amount: 200,
+  },
 ];
 
 export const mocRecipes = [

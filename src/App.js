@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AppLayout from "./Components/layout/AppLayout";
 import Recipes from "./pages/recipes/Recipes";
 import Blank from "./pages/Blank";
+import User from "./pages/user/User";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
           <Route index element={<Blank />} />
           <Route path="/started" element={<Blank />} />
           <Route path="/calendar" element={<Blank />} />
-          <Route path="/user" element={<Blank />} />
+          <Route path="/user" element={<User />} />
           <Route path="/recipes" element={<Recipes />} />
         </Route>
       </Routes>

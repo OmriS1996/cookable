@@ -1,16 +1,19 @@
-import {
-  mocRecipes,
-  category,
-  measureType,
-  ingredient,
-} from "../../mocdata/mocdata";
+import { getAllRecipes } from "../../lib/mocApiCalls";
 import RecipeCard from "../../Components/recipecard/RecipeCard";
 import "./Recipes.css";
+import { useEffect, useState } from "react";
 
 export default function Recipes(props) {
+  const [recipes, setRecipes] = useState([]);
+
+  useEffect(() => {
+    let recipesData = getAllRecipes();
+    setRecipes(recipesData);
+  }, []);
+
   return (
     <div className="recipes">
-      {mocRecipes.map((item) => (
+      {recipes.map((item) => (
         <RecipeCard
           id={item.id}
           image={item.imageURL}
