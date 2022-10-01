@@ -20,14 +20,17 @@ export const measureType = {
   m1: {
     id: "m1",
     measureName: "units",
+    mesureShort: "",
   },
   m2: {
     id: "m2",
     measureName: "gram",
+    measureShort: "g.",
   },
   m3: {
     id: "m3",
     measureName: "liter",
+    measureShort: "l.",
   },
 };
 
@@ -37,14 +40,14 @@ export const ingredient = [
     name: "egg",
     categoryId: "c3",
     measureTypeId: "m1",
-    amount: 0,
+    amount: 8,
   },
   {
     id: "i2",
     name: "beef antricot",
     categoryId: "c1",
     measureTypeId: "m2",
-    amount: 100,
+    amount: 0,
   },
   {
     id: "i3",
